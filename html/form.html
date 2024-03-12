@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html"> Back to Introductory Page</a>
+    <h2>Fill Out This Form</h2>
+    <h4>Please provide your details</h4>
+    
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        
+        <fieldset>
+            <legend>Join Our Membership Program:</legend>
+            <input type="radio" id="basic" name="subscription" value="basic">
+            <label for="basic">Basic</label><br>
+            
+            <input type="radio" id="premium" name="subscription" value="premium">
+            <label for="premium">Premium</label><br>
+            
+            <input type="radio" id="vip" name="subscription" value="vip">
+            <label for="vip">VIP</label>
+        </fieldset><br>
+        
+        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+        <label for="newsletter">Sign up for Newsletter</label><br>
+        
+        <input type="checkbox" id="updates" name="updates" value="updates">
+        <label for="updates">Receive Updates</label><br><br>
+        
+        <label for="options">Choose your preference:</label><br>
+        <select id="options" name="options" multiple>
+            <option value="option1">Chocolate</option>
+            <option value="option2">Vanilla</option>
+            <option value="option3">Strawberry</option>
+            <option value="option4">Caramel</option>
+        </select><br><br>
+        
+        <label for="date">Choose your birthdate:</label><br>
+        <input type="date" id="date" name="date" min="1910-01-01" max="2024-01-01"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
